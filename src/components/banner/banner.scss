@@ -1,0 +1,52 @@
+@import '../../assets/styles/colors/index.scss';
+
+.banner {
+  position: relative;
+
+  &__title {
+      font-family: 'Manjari bold';
+      font-size: 75px;
+      max-width: 50%;
+      position: relative;
+      top: 90px;
+
+      h1 {
+          margin: 0;
+      }
+  }
+
+  &__article,
+  &__way {
+      font-family: 'Manjari';
+      font-weight: 100;
+  }
+
+  &__typing {
+    margin-right: 20px;
+  }
+
+  &__description {
+      display: flex;
+  }
+
+  &__contact {
+    background: $red-gradient-button;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Manjari';
+    font-size: 52px;
+    padding: 30px 60px 20px;
+    transition: background-position 0.4s ease;
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+  
+    &:hover {
+      background-position: 100%;
+    }
+  }
+}

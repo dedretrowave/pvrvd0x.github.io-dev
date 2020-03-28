@@ -1,0 +1,70 @@
+.starfall {
+  position: absolute;
+  z-index: -1;
+
+  &__rect {
+    position: relative;
+    transition: left .5s ease, bottom .5s ease;
+    animation: ease-in-out both 1s;
+
+    &-1 {
+      bottom: 830px;
+      left: 50%;
+      width: 180px;
+      height: 1178px;
+      animation-delay: .2s;
+    }
+
+    &-2 {
+      bottom: 780px;
+      left: 70%;
+      width: 130px;
+      height: 1295.35px;
+      animation-delay: .5s;
+    }
+
+    &-3 {
+      bottom: 570px;
+      left: 75%;
+      width: 180px;
+      height: 1551.31px;
+      animation-delay: .2s;
+    }
+
+    &-4 {
+      bottom: 750px;
+      left: 80%;
+      width: 170px;
+      height: 1200px;
+      animation-delay: .4s;
+    }
+
+    &-5 {
+      bottom: 800px;
+      left: 80%;
+      width: 140px;
+      height: 875px;
+      animation-delay: .3s;
+    }
+
+    &-6 {
+      bottom: 800px;
+      left: 85%;
+      width: 140px;
+      height: 911px;
+      animation-delay: .6s;
+    }
+  }
+}
+
+@keyframes display {
+  from {
+    transform: rotate(-121.87deg);
+    bottom: 200%;
+    left: 450%;
+  }
+
+  to {
+    transform: rotate(-121.87deg);
+  }
+}
