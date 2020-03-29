@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Banner } from './components';
+import { Banner, Whoami } from './sections';
 
 import './assets/styles/index.scss';
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="app">
       <Banner/>
+      <Whoami/>
     </div>
   );
 }

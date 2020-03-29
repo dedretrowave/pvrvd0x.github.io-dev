@@ -2,7 +2,7 @@ import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import ReactWoW from 'react-wow';
 
-import { Navbar, Starfall } from '..';
+import { Navbar, Starfall } from '../../components';
 
 import './banner.scss';
 
@@ -15,19 +15,18 @@ const Banner = () => {
   const adjectives = [
     'HONEST',
     'EFFECTIVE',
-    'PRODUCTIVE',
     'FRIENDLY',
     'CREATIVE',
     'UNIQUE'
   ];
 
-  const specs = [
-    'DEVELOPING',
-    'DESIGNING',
-    'COPYWRITING',
-    'OPTIMIZING',
-    'CREATE',
-  ];
+  // const specs = [
+  //   'DEVELOPING',
+  //   'DESIGNING',
+  //   'COPYWRITING',
+  //   'OPTIMIZING',
+  //   'CREATE',
+  // ];
 
   return (
     <div className="banner container">
@@ -36,12 +35,13 @@ const Banner = () => {
       <div className="banner__title">
         <ReactWoW animation='fadeInLeft'>
           <h1 className="banner__career">
-            <ReactTypingEffect
+            {/* <ReactTypingEffect
               text={specs}
               eraseDelay={eraseDelay}
               typingDelay={typingDelay}
               typingSpeed={typingSpeed}
-            />
+            /> */}
+            FREELANCING
           </h1>
         </ReactWoW>
         <ReactWoW animation='fadeInLeft' delay='200ms'>

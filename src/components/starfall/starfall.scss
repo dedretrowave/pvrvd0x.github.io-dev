@@ -5,7 +5,7 @@
   &__rect {
     position: relative;
     transition: left .5s ease, bottom .5s ease;
-    animation: ease-in-out both 1s;
+    animation: display ease-in-out both 1s;
 
     &-1 {
       bottom: 830px;
