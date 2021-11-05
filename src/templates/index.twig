@@ -179,10 +179,60 @@
     <section class="works">
         <div class="container">
             <h1 class="works__title">TOO MUCH HAVE BEEN SPOKEN TIME TO SHOW SOMETHING</h1>
-
+            <div class="works-work">
+                <h4 class="works-work__title">Syberry Blog</h4>
+                <div class="works-work-slider syberry-blog splide">
+                    <div class="works-work-slider__track splide__track">
+                        <div class="works-work-slider__list splide__list">
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-blog/slide01.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-blog/slide02.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works-work">
+                <h4 class="works-work__title">Slim Chat</h4>
+                <div class="works-work-slider slim-chat splide">
+                    <div class="works-work-slider__track splide__track">
+                        <div class="works-work-slider__list splide__list">
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/slim-chat/slide01.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/slim-chat/slide02.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/slim-chat/slide03.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/slim-chat/slide04.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/slim-chat/slide05.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 <script src="assets/js/index.min.js"></script>
+<script>
+    const splideOptions = {
+        type         : 'loop',
+        autoplay     : true,
+        perPage      : 1,
+        pauseOnHover : false,
+        resetProgress: false,
+    }
+
+    new Splide('.syberry-blog', splideOptions).mount();
+    new Splide('.slim-chat', splideOptions).mount();
+</script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+.works {
+  &__title {
+    font-family: 'Manjari-Bold', sans-serif;
+    color: $c-works-title;
+    font-size: 32px;
+  }
+
+  &-work {
+    &__title {
+      font-family: 'Source-Sans-Bold', sans-serif;
+      color: $c-works-work-slider-title;
+      font-size: 33px;
+      margin: 50px 0 40px;
+    }
+
+    &-slider {
+      &__track {
+        max-width: 1700px;
+        margin: auto;
+      }
+
+      &__slide {
+        display: flex;
+        align-items: center;
+        max-height: 800px;
+      }
+
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}

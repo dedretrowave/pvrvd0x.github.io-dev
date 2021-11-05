@@ -22,6 +22,11 @@ $c-transparent: transparent;
 
 $c-site-bg: $c-purple;
 
+$c-front-end-bg-gray-transparent:
+        linear-gradient(180deg, $c-gray 10.5%, $c-transparent 93.07%);
+$c-back-end-dark-purple-transparent:
+        linear-gradient(180deg, $c-dark-purple-2 38.16%, $c-transparent 96.31%);
+
 $c-yellow-transparent-gradient:
         linear-gradient(154.28deg, $c-yellow -22.64%, $c-transparent 106.44%);
 $c-react-blue-transparent-gradient:
@@ -30,10 +35,6 @@ $c-bulma-green-transparent-gradient:
         linear-gradient(154.28deg, $c-bulma-green -22.64%, $c-transparent 106.44%);
 $c-bootstrap-purple-transparent-gradient:
         linear-gradient(154.28deg, $c-bootstrap-purple -22.64%, $c-transparent 106.44%);
-$c-front-end-bg-gray-transparent:
-        linear-gradient(119.72deg, $c-gray 10.5%, $c-transparent 93.07%);
-$c-back-end-dark-purple-transparent:
-        linear-gradient(126.63deg, $c-dark-purple-2 38.16%, $c-transparent 96.31%);
 $c-green-transparent-gradient:
         linear-gradient(154.28deg, $c-node-green -22.64%, $c-transparent 106.44%);
 $c-light-purple-transparent-gradient:
@@ -85,3 +86,6 @@ $c-technologies-block-opencart-bg: $c-light-blue-transparent-gradient;
 $c-technologies-block-wordpress-bg: $c-blue-transparent-gradient;
 $c-technologies-block-python-bg: $c-yellow-1-blue-4-transparent-gradient;
 $c-technologies-block-django-bg: $c-django-green-transparent-gradient;
+
+$c-works-title: $c-white;
+$c-works-work-slider-title: $c-white;
