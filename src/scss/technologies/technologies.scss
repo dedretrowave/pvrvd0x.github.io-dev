@@ -1,0 +1,49 @@
+.technologies-item {
+  &--js {
+    background: $c-technologies-block-js-bg;
+  }
+
+  &--react {
+    background: $c-technologies-block-react-bg;
+  }
+
+  &--bulma {
+    background: $c-technologies-block-bulma-bg;
+  }
+
+  &--bootstrap {
+    background: $c-technologies-block-bootstrap-bg;
+  }
+
+  &--jquery {
+    background: $c-technologies-block-jquery-bg;
+  }
+
+  &--angular {
+    background: $c-technologies-block-angular-bg;
+  }
+
+  &--node {
+    background: $c-technologies-block-node-bg;
+  }
+
+  &--php {
+    background: $c-technologies-block-php-bg;
+  }
+
+  &--opencart {
+    background: $c-technologies-block-opencart-bg;
+  }
+
+  &--wordpress {
+    background: $c-technologies-block-wordpress-bg;
+  }
+  
+  &--python {
+    background: $c-technologies-block-python-bg;
+  }
+  
+  &--django {
+    background: $c-technologies-block-django-bg;
+  }
+}
