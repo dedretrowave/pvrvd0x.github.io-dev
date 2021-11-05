@@ -1,0 +1,73 @@
+.who-am-i {
+  position: relative;
+
+  &__body {
+    height: 100%;
+    width: 100%;
+    background-color: $c-who-am-i-bg;
+  }
+
+  &::before, &::after {
+    display: block;
+    content: '';
+    width: 1922px;
+    height: 215px;
+    position: relative;
+  }
+
+  &::before {
+    background-image: url('../img/who-am-i-top-wave.svg');
+    background-size: cover;
+    top: 0;
+  }
+
+  &::after {
+    background-image: url('../img/who-am-i-bottom-wave.svg');
+    background-size: cover;
+    bottom: 0;
+  }
+
+  .who-am-i-columns {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  .who-am-i-column {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    &-item {
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+
+      &__title {
+        font-size: 55px;
+        font-family: 'Manjari-Bold', sans-serif;
+        color: $c-who-am-i-title;
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        font-family: 'Source-Sans-Regular', sans-serif;
+        color: $c-who-am-i-text;
+        font-size: 18px;
+      }
+
+      &__link {
+        color: $c-who-am-i-link;
+        text-decoration: underline;
+      }
+
+      &__img {
+        max-width: 666px;
+        max-height: 693px;
+
+        width: 300px;
+        height: 350px;
+      }
+    }
+  }
+}
