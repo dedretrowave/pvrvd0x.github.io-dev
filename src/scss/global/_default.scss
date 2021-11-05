@@ -23,3 +23,13 @@ body {
     width: 1170px;
   }
 }
+
+.display-md-block {
+  @media screen and (max-width: $screen-md) {
+    display: none;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    display: block;
+  }
+}

@@ -1,4 +1,6 @@
 $c-purple: #553D67;
+$c-dark-purple: #2F2239;
+$c-blue: #93CAED;
 $c-white: #FFFFFF;
 $c-red: rgb(184, 38, 74);
 $c-transparent: transparent;
@@ -11,3 +13,9 @@ $c-header-nav-link-underline: $c-white;
 $c-header-heading-title: $c-white;
 $c-header-contact-text: $c-white;
 $c-header-contact-bg: linear-gradient(101.74deg, $c-red 8.53%, $c-transparent 101.26%);
+
+
+$c-who-am-i-bg: $c-dark-purple;
+$c-who-am-i-text: $c-white;
+$c-who-am-i-title: $c-white;
+$c-who-am-i-link: $c-blue;
