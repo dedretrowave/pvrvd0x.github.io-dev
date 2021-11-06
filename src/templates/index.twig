@@ -23,11 +23,11 @@
         </p>
         <p class="animate__fadeInLeft animate__animated">WAY</p>
     </div>
-    <button class="header-contact animate__fadeInUp animate__animated">
+    <a href="mailto:pvrvd0x-mail@yandex.ru" class="header-contact animate__fadeInUp animate__animated">
         <span class="header-contact__text">
             Contact Me
         </span>
-    </button>
+    </a>
     <div class="stars">
         <img src="assets/img/star.svg" alt="" class="stars__star animate__animated animate__fadeInTopRight">
         <img src="assets/img/star.svg" alt="" class="stars__star animate__animated animate__fadeInTopRight">
@@ -179,7 +179,7 @@
         <div class="container">
             <h1 class="works__title">TOO MUCH HAVE BEEN SPOKEN TIME TO SHOW SOMETHING</h1>
             <div class="works-work">
-                <h4 class="works-work__title">Syberry Blog</h4>
+                <h4 class="works-work__title"><a href="https://blog.syberry.by" class="works-work__link">Syberry Blog</a></h4>
                 <div class="works-work-slider syberry-blog splide">
                     <div class="works-work-slider__track splide__track">
                         <div class="works-work-slider__list splide__list">
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="works-work">
-                <h4 class="works-work__title">Slim Chat</h4>
+                <h4 class="works-work__title"><a href="https://slim-chat.herokuapp.com" class="works-work__link">Slim Chat</a></h4>
                 <div class="works-work-slider slim-chat splide">
                     <div class="works-work-slider__track splide__track">
                         <div class="works-work-slider__list splide__list">
@@ -217,6 +217,48 @@
                     </div>
                 </div>
             </div>
+            <div class="works-work">
+                <h4 class="works-work__title"><a href="https://syberry.by" class="works-work__link">Syberry By</a></h4>
+                <div class="works-work-slider syberry-by splide">
+                    <div class="works-work-slider__track splide__track">
+                        <div class="works-work-slider__list splide__list">
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-by/slide01.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-by/slide02.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-by/slide03.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/syberry-by/slide04.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works-work">
+                <h4 class="works-work__title"><a href="https://flash-pro.by" class="works-work__link">Flash Pro</a></h4>
+                <div class="works-work-slider flash-pro splide">
+                    <div class="works-work-slider__track splide__track">
+                        <div class="works-work-slider__list splide__list">
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/flash-pro/slide01.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/flash-pro/slide02.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/flash-pro/slide03.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                            <div class="works-work-slider__slide splide__slide">
+                                <img src="assets/img/flash-pro/slide04.PNG" alt="" class="works-work-slider__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -226,16 +268,16 @@
             <h1 class="footer__title">Contact Me</h1>
             <div class="footer__links">
                 <div class="footer-contacts">
-                    <a href="" class="footer-contacts__link">
+                    <a href="https://t.me/DMessiah" class="footer-contacts__link">
                         <img src="assets/img/telegram.svg" alt="" class="footer-contacts__icon">
                     </a>
-                    <a href="" class="footer-contacts__link">
+                    <a href="https://www.instagram.com/anarchy_son_/" class="footer-contacts__link">
                         <img src="assets/img/instagram.svg" alt="" class="footer-contacts__icon">
                     </a>
-                    <a href="" class="footer-contacts__link">
+                    <a href="mailto:pvrvd0x-mail@yandex.ru" class="footer-contacts__link">
                         <img src="assets/img/yandex-mail.svg" alt="" class="footer-contacts__icon">
                     </a>
-                    <a href="" class="footer-contacts__link">
+                    <a href="mailto:johnsneg03@gmail.com" class="footer-contacts__link">
                         <img src="assets/img/gmail.svg" alt="" class="footer-contacts__icon">
                     </a>
                 </div>
@@ -260,8 +302,9 @@
         resetProgress: false,
     }
 
-    new Splide('.syberry-blog', splideOptions).mount();
-    new Splide('.slim-chat', splideOptions).mount();
+    document.querySelectorAll('.splide').forEach(element => {
+        new Splide('.' + element.classList[1], splideOptions).mount();
+    })
 </script>
 </body>
 </html>
